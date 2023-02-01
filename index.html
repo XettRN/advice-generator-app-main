@@ -8,21 +8,27 @@
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800">
 </head>
 <body>
+  <main>
+    <div class="advice">
+      <h1 id="adviceHeader"></h1>
+      <p id="adviceText"></p>
+      <img id="imgdesktop" src="images/pattern-divider-desktop.svg" alt="desktop divider">
+      <img id="imgmobile" src="images/pattern-divider-mobile.svg" alt="mobile divider">
+      <button id="adviceReroll">
+        <img src="images/icon-dice.svg" alt="reroll">
+      </button>
+    </div>
 
-  Advice #<!-- Advice ID goes here -->
+    <script src="advice.js"></script>
+  </main>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://ttexpie.github.io">Kyle Mettille</a>.
+  </footer>
 </body>
 </html>

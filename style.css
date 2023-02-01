@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: hsl(218, 23%, 16%);
+    font-family: Manrope;
+    font-weight: 800;
+    text-align: center;
+}
+
+.advice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsl(217, 19%, 24%);
+    border-radius: 15px;
+}
+
+.advice h1 {
+    color: hsl(150, 100%, 66%);
+    font-size: 1rem;
+    font-stretch: 200%;
+    letter-spacing: 0.3rem;
+}
+
+.advice p {
+    font-size: 2rem;
+    color: hsl(193, 38%, 86%);
+    margin-top: 1rem;
+}
+
+.advice button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 0;
+    border-radius: 100%;
+    background: hsl(150, 100%, 66%);
+    position: relative;
+    top: 40px;
+    transition-duration: 0.5s;
+}
+
+.advice button img {
+    width: 30px;
+    height: 30px;
+}
+
+.advice button:hover {
+    background: hsl(150, 100%, 80%);
+}
+
+.advice button:active {
+    background: hsl(150, 100%, 10%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (min-width: 376px) {
+    #imgmobile  {
+        display: none;
+    }
+
+    .advice {
+        padding: 50px 60px 0px;
+    }
+
+    .advice p {
+        max-width: 444px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #imgdesktop {
+        display: none;
+    }
+
+    .advice {
+        padding: 40px 20px 0px;
+    }
+
+    .advice h1 {
+        font-size: 0.8rem;
+    }
+
+    .advice p {
+        max-width: 300px;
+        font-size: 1.8rem;
+    }
+}
